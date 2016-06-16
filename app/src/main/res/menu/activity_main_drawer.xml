@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Магазины">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/select1"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="Юлмарт" />
+
+                <item android:id="@+id/select3"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="DNS" />
+
+                <item android:id="@+id/select6"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:title="Enter" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Списки">
+        <menu>
+            <item
+                android:id="@+id/database"
+                android:icon="@drawable/ic_assignment_black_24dp"
+                android:title="Список покупок" />
+        </menu>
+    </item>
+
+</menu>

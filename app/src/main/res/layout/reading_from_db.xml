@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/textView8"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_toLeftOf="@+id/button5" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Описание"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="215dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignBottom="@+id/progressBar3"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView9"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_alignBottom="@+id/progressBar3" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Цена: "
+        android:id="@+id/textView10"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_below="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:autoLink="web"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Открыть в браузере"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/progressBar3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить в список покупок"
+        android:id="@+id/button4"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получить БД"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+</RelativeLayout>
